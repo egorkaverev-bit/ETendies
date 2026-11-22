@@ -1,0 +1,21 @@
+name: ETendiesMobile
+options:
+  bundleIdPrefix: com.egor.etendies
+  deploymentTarget:
+    iOS: 17.0
+targets:
+  ETendiesMobile:
+    type: application
+    platform: iOS
+    sources:
+      - path: .
+        excludes:
+          - project.yml
+    settings:
+      base:
+        PRODUCT_NAME: ETendies Mobile
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.etendies.mobile
+        INFOPLIST_FILE: Info.plist
+        CODE_SIGN_STYLE: Automatic
+        IPHONEOS_DEPLOYMENT_TARGET: 17.0
+        SWIFT_VERSION: 5.0
